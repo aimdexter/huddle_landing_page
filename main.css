@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #674baf;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0rem 2rem;
+  gap: 50px;
+}
+
+main .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+main .left-side .logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 50%;
+}
+
+main .left-side .mockups {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+}
+
+main .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+main .right-side h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+}
+
+main .right-side p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16.5px;
+  text-align: center;
+  color: white;
+}
+
+main .right-side a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16.5px;
+  text-align: center;
+  background-color: white;
+  color: #674baf;
+  width: 70%;
+  border-radius: 100px;
+  border: solid white;
+}
+
+main .right-side a button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16.5px;
+  text-align: center;
+  background-color: white;
+  color: #674baf;
+  width: 70%;
+  border-radius: 100px;
+  border: solid white;
+  padding: 5px;
+}
+
+main .right-side .social-media {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .right-side .social-media a {
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 7px;
+}
+
+main .right-side .social-media i {
+  padding: 11px 11px;
+  font-size: 20px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
