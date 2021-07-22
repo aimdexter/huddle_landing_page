@@ -94,3 +94,48 @@ main{
 }
 
 }
+@media (min-width: 426px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    main{
+
+        max-width: 768px;
+        height: auto;
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: row;    
+    }
+    
+}
+@media (min-width:1440px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        margin: 0rem;
+        padding: 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(./images/bg-desktop.svg);
+        background-size: contain;
+        max-width: 100vw;
+        height: 100vh;
+
+    }
+    .left-side{
+        margin: 2rem;
+        .logo{
+            order: 1;
+            width: 10%;
+            }
+        .mockups{
+            order: 2;
+            width: 100%;
+        }
+    }
+    
+}
