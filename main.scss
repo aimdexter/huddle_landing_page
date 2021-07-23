@@ -62,7 +62,7 @@ main{
             color: white;
 
         }
-        @mixin button {
+        .button {
             align-self: center;
             @include body-text;
             background-color: white;
@@ -70,14 +70,14 @@ main{
             width: 70%;
             border-radius: 100px;
             border: solid white;
-        }
-        a{
-            @include button;
-
-            button{
-                @include button;
-                padding: 5px;
-            }
+            padding: 5px;
+            text-decoration: none;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            &:hover{
+                color: white;
+                background-color: $solft_magenta;
+                border: solid $solft_magenta;
+            }            
         }
         .social-media{
             align-self: center;
@@ -89,12 +89,21 @@ main{
                 height: 36px;
                 border: 2px solid white;
                 border-radius: 20px;
-                margin-right: 7px;            
+                margin-right: 7px;
+                &:hover{
+                    border: 2px solid $solft_magenta;
+                }            
+
             }
             i{
-                padding: 8px 0px;
+                padding: 9px 9px;
                 font-size: 20px;
                 color: white;
+                &:hover{
+                    color: $solft_magenta;
+                    background-color: transparent;
+                }            
+    
              }
         }
 }
@@ -158,18 +167,16 @@ main{
                 text-align: left;
                 font-size: 20px;
             }
-            a{
+            .button{
                 width: 35%;
                 align-self:flex-start;
-                button{
-                    padding:  0.7rem 0rem ;
+                    padding:  0.8rem 0rem ;
                     font-size: 20px;
-                }
             }
             .social-media{
                 position: absolute;
                 top: 150%;
-                left: 75%;         
+                left: 70%;         
                 a{
                     margin-right: 1rem;
                 }       

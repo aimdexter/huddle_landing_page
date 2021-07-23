@@ -90,22 +90,7 @@ main .right-side p {
   color: white;
 }
 
-main .right-side a {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16.5px;
-  text-align: center;
-  background-color: white;
-  color: #674baf;
-  width: 70%;
-  border-radius: 100px;
-  border: solid white;
-}
-
-main .right-side a button {
+main .right-side .button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -119,6 +104,15 @@ main .right-side a button {
   border-radius: 100px;
   border: solid white;
   padding: 5px;
+  text-decoration: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+main .right-side .button:hover {
+  color: white;
+  background-color: #e882e8;
+  border: solid #e882e8;
 }
 
 main .right-side .social-media {
@@ -142,10 +136,19 @@ main .right-side .social-media a {
   margin-right: 7px;
 }
 
+main .right-side .social-media a:hover {
+  border: 2px solid #e882e8;
+}
+
 main .right-side .social-media i {
-  padding: 8px 0px;
+  padding: 9px 9px;
   font-size: 20px;
   color: white;
+}
+
+main .right-side .social-media i:hover {
+  color: #e882e8;
+  background-color: transparent;
 }
 
 @media (min-width: 426px) {
@@ -231,19 +234,17 @@ main .right-side .social-media i {
     text-align: left;
     font-size: 20px;
   }
-  main .right-side a {
+  main .right-side .button {
     width: 35%;
     -ms-flex-item-align: start;
         align-self: flex-start;
-  }
-  main .right-side a button {
-    padding: 0.7rem 0rem;
+    padding: 0.8rem 0rem;
     font-size: 20px;
   }
   main .right-side .social-media {
     position: absolute;
     top: 150%;
-    left: 75%;
+    left: 70%;
   }
   main .right-side .social-media a {
     margin-right: 1rem;
